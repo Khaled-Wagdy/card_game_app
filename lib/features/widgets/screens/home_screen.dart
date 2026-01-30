@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       'assets/icons/icons_duration.png',
                       "Duration",
                     ),
-                    _buildStatCard("assets/icons/icons_stat.png", "Stats"),
+                    _buildStatCard("assets/icons/icons_stats.png", "Stats"),
                   ],
                 ),
               ),
