@@ -1,3 +1,6 @@
+import 'package:card_game_app/features/widgets/screens/exp_2.dart';
+import 'package:card_game_app/features/widgets/screens/exp_3.dart';
+import 'package:card_game_app/features/widgets/screens/exp_4.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -7,12 +10,12 @@ class BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      // onTap: () {
-      //   Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (context) => Exp2()),
-      //   );
-      // },
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Exp2()),
+        );
+      },
       child: Container(
         height: 100.h,
         alignment: Alignment.center,
@@ -27,42 +30,42 @@ class BottomNavBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             InkWell(
-              // onTap: () {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Exp2()),
-              //   );
-              // },
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Exp2()),
+                );
+              },
               child: MouseRegion(
                 cursor: SystemMouseCursors.click,
                 child: Icon(Icons.home, color: Colors.white, size: 30),
               ),
             ),
             InkWell(
-              // onTap: () {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Exp3()),
-              //   );
-              // },
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Exp3()),
+                );
+              },
               child: Icon(Icons.emoji_events, color: Colors.white, size: 30),
             ),
             InkWell(
-              // onTap: () {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Exp4()),
-              //   );
-              // },
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Exp4()),
+                );
+              },
               child: Icon(Icons.menu_book, color: Colors.white, size: 30),
             ),
             InkWell(
-              // onTap: () {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Exp2()),
-              //   );
-              // },
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Exp2()),
+                );
+              },
               child: Icon(Icons.settings, color: Colors.white, size: 30),
             ),
           ],
