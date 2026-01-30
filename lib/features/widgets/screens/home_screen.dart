@@ -1,5 +1,4 @@
 import 'package:card_game_app/core/widgets/custom_app_bar.dart';
-import 'package:card_game_app/core/widgets/custom_app_bar.dart';
 import 'package:card_game_app/core/widgets/bottom_nav_bar.dart';
 import 'package:card_game_app/core/widgets/game_select_button.dart';
 import 'package:card_game_app/core/widgets/leaderboard_section.dart';
@@ -29,7 +28,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 60.h),
-                // الطيارات الورقية في الخلفية
+
                 Transform.rotate(
                   angle: 0.5,
                   child: Row(
@@ -63,9 +62,8 @@ class HomeScreen extends StatelessWidget {
               child: GameSelectButton(onTap: () {}, title: "second game"),
             ),
 
-            // الجزء الثالث: صف الإحصائيات (الصور)
             Positioned(
-              top: 330.h, // مكانها تحت الزراير والطيارات
+              top: 330.h,
               left: 0,
               right: 0,
               child: Padding(
@@ -78,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       'assets/icons/icons_duration.png',
                       "Duration",
                     ),
-                    _buildStatCard("assets/icons/icons_stats.png", "Stats"),
+                    _buildStatCard("assets/icons/icons_stat.png", "Stats"),
                   ],
                 ),
               ),

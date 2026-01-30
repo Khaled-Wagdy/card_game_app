@@ -16,10 +16,9 @@ class LeaderboardSection extends StatelessWidget {
         ),
         child: ListView.builder(
           padding: EdgeInsets.only(top: 10.h),
-          itemCount: 10, // جرب كذا مستخدم عشان تشوف الـ Scroll
+          itemCount: 10,
           itemBuilder: (context, index) {
             return Container(
-              // تبديل اللون بين الصفوف
               color: index % 2 != 0
                   ? Colors.purple.withOpacity(0.05)
                   : Colors.transparent,
