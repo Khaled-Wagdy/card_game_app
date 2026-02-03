@@ -2,9 +2,9 @@ import 'package:card_game_app/core/widgets/app_assets.dart';
 import 'package:card_game_app/features/widgets/screens/login_screen.dart';
 import 'package:card_game_app/features/widgets/screens/singnup_screen.dart';
 import 'package:flutter/material.dart';
-
 import 'package:card_game_app/core/widgets/castom_bottom.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:card_game_app/core/widgets/bottom_flowers_widget.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -15,6 +15,8 @@ class LandingScreen extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
+            const BottomFlowersWidget(),
+
             Align(
               alignment: Alignment.center,
               child: SingleChildScrollView(
@@ -23,15 +25,12 @@ class LandingScreen extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(height: 30.h),
-
                     Image.asset(
                       AppAssets.lionLogo,
                       height: 270.h,
                       width: 393.5.w,
                     ),
-
                     SizedBox(height: 20.h),
-
                     Text(
                       "Mystic Deck",
                       style: TextStyle(
@@ -40,9 +39,7 @@ class LandingScreen extends StatelessWidget {
                         color: const Color(0xFF7A1FA0),
                       ),
                     ),
-
                     SizedBox(height: 14.h),
-
                     Text(
                       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
                       textAlign: TextAlign.center,
@@ -52,9 +49,7 @@ class LandingScreen extends StatelessWidget {
                         color: const Color(0xFF7A1FA0),
                       ),
                     ),
-
                     SizedBox(height: 40.h),
-
                     CustomButton(
                       text: "Login into existing account",
                       onPressed: () {
@@ -67,9 +62,7 @@ class LandingScreen extends StatelessWidget {
                       },
                       isOutlined: false,
                     ),
-
                     SizedBox(height: 20.h),
-
                     Text(
                       "Or",
                       style: TextStyle(
@@ -78,15 +71,10 @@ class LandingScreen extends StatelessWidget {
                         fontSize: 14.sp,
                       ),
                     ),
-
                     SizedBox(height: 20.h),
-
                     CustomButton(
                       text: "Don't have an account? Sign up",
                       onPressed: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Sign Up')),
-                        );
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -97,50 +85,8 @@ class LandingScreen extends StatelessWidget {
                       isOutlined: true,
                     ),
 
-                    SizedBox(height: 120.h),
+                    SizedBox(height: 130.h),
                   ],
-                ),
-              ),
-            ),
-
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: EdgeInsets.only(bottom: 8.h),
-                child: SizedBox(
-                  width: 360.w,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: Transform.translate(
-                          offset: Offset(-12.w, 0),
-                          child: Image.asset(
-                            AppAssets.flowersBg,
-                            height: 120.h,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Image.asset(
-                          AppAssets.flowersBg,
-                          height: 120.h,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      Expanded(
-                        child: Transform.translate(
-                          offset: Offset(12.w, 0),
-                          child: Image.asset(
-                            AppAssets.flowersBg,
-                            height: 120.h,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
               ),
             ),

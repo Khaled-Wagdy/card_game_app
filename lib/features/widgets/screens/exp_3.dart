@@ -16,7 +16,7 @@ class Exp3 extends StatelessWidget {
           child: Column(
             spacing: 20.h,
             children: [
-              CustomAppBar(),
+              CustomAppBar(title: "Explore Themes"),
               NavBar(),
               StackInfo(title: "states", image: ("assets/images/mask.png")),
 

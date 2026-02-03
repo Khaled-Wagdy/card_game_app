@@ -1,0 +1,19 @@
+[33m1c48716[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAbdo[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m52eff93[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: checkout: moving from main to Abdo
+[33m52eff93[m[33m ([m[1;32mmain[m[33m)[m HEAD@{2}: merge Abdo: Fast-forward (no commit created; -m option ignored)
+[33m1c48716[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAbdo[m[33m)[m HEAD@{3}: checkout: moving from Abdo to main
+[33m52eff93[m[33m ([m[1;32mmain[m[33m)[m HEAD@{4}: commit: From Abdo
+[33m1c48716[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAbdo[m[33m)[m HEAD@{5}: checkout: moving from main to Abdo
+[33m1c48716[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAbdo[m[33m)[m HEAD@{6}: merge Abdo: Fast-forward (no commit created; -m option ignored)
+[33m8b84f3b[m[33m ([m[1;31morigin/Abdo[m[33m)[m HEAD@{7}: checkout: moving from Abdo to main
+[33m1c48716[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAbdo[m[33m)[m HEAD@{8}: commit: From Abdo
+[33m8b84f3b[m[33m ([m[1;31morigin/Abdo[m[33m)[m HEAD@{9}: checkout: moving from main to Abdo
+[33m8b84f3b[m[33m ([m[1;31morigin/Abdo[m[33m)[m HEAD@{10}: merge Abdo: Fast-forward (no commit created; -m option ignored)
+[33mb69b8c0[m HEAD@{11}: checkout: moving from Abdo to main
+[33m8b84f3b[m[33m ([m[1;31morigin/Abdo[m[33m)[m HEAD@{12}: checkout: moving from main to Abdo
+[33mb69b8c0[m HEAD@{13}: checkout: moving from Abdo to main
+[33m8b84f3b[m[33m ([m[1;31morigin/Abdo[m[33m)[m HEAD@{14}: commit: From Abdo
+[33mb69b8c0[m HEAD@{15}: checkout: moving from main to Abdo
+[33mb69b8c0[m HEAD@{16}: checkout: moving from Abdo to main
+[33mb69b8c0[m HEAD@{17}: checkout: moving from main to Abdo
+[33mb69b8c0[m HEAD@{18}: clone: from https://github.com/Khaled-Wagdy/card_game_app.git

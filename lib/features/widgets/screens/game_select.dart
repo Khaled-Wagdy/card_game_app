@@ -16,7 +16,7 @@ class GameSelect extends StatelessWidget {
           child: Column(
             spacing: 20.h,
             children: [
-              CustomAppBar(),
+              CustomAppBar(title: "Explore Themes"),
               GameSelectContainer(),
               GameSelectButton(onTap: () {}, title: "hala"),
               GameSelectButton(onTap: () {}, title: "hala"),

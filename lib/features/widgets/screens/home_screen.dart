@@ -1,8 +1,9 @@
-import 'package:card_game_app/core/widgets/bottom_nav_bar.dart';
 import 'package:card_game_app/core/widgets/custom_app_bar.dart';
+import 'package:card_game_app/core/widgets/bottom_nav_bar.dart';
 import 'package:card_game_app/core/widgets/game_select_button.dart';
-import 'package:card_game_app/core/widgets/leader_board_section.dart';
+import 'package:card_game_app/core/widgets/leaderboard_section.dart';
 import 'package:card_game_app/features/widgets/screens/join_screen.dart';
+import 'package:card_game_app/features/widgets/screens/waiting_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Column(
               children: [
-                const CustomAppBar(),
+                const CustomAppBar(title: "Explore Themes"),
                 SizedBox(height: 20.h),
                 Text(
                   "Welcome User!",
@@ -59,7 +60,17 @@ class HomeScreen extends StatelessWidget {
             Positioned(
               top: 230.h,
               left: 20,
-              child: GameSelectButton(onTap: () {}, title: "second game"),
+              child: GameSelectButton(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const WaitingRoomScreen(),
+                    ),
+                  );
+                },
+                title: "second game",
+              ),
             ),
 
             Positioned(
@@ -81,7 +92,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-
             Positioned(
               top: 420.h,
               left: 0,
@@ -118,8 +128,8 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(imagePath),
-          SizedBox(height: 2.h),
+          Image.asset(imagePath, width: 55.w, height: 55.h),
+
           Text(
             label,
             style: TextStyle(

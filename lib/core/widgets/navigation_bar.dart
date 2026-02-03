@@ -29,7 +29,7 @@ class NavBar extends StatelessWidget {
             },
             child: InkWell(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => Exp3()),
                 );
@@ -55,7 +55,7 @@ class NavBar extends StatelessWidget {
           ),
           child: InkWell(
             onTap: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => Exp4()),
               );
@@ -80,7 +80,7 @@ class NavBar extends StatelessWidget {
           ),
           child: InkWell(
             onTap: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => Exp2()),
               );
